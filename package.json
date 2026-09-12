@@ -1,0 +1,27 @@
+{
+  "name": "terraform",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "TERRAFORM — a premium single-player browser strategy game about turning a dead planet into a living world.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "build:simtest": "vite build --config vite.simtest.config.ts",
+    "test": "vite build --config vite.simtest.config.ts && node --test tests/sim.test.mjs",
+    "qa:server": "vite preview --port 4173 --host 127.0.0.1 --strictPort",
+    "qa": "node qa/smoke.mjs"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.186.0",
+    "puppeteer-core": "^25.10.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/core", "src/sim", "src/render", "src/i18n.ts"]
+}
